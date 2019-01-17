@@ -64,7 +64,7 @@ $template = file_get_contents(__DIR__ .'test_template.html');
 $totalc = count($data->data->recs);
 $datatoarray = get_object_vars($data->data->recs);
 var_dump($datatoarray);
-for($i=0;$i<=$totalc,$i++){
+for($i=0;$i<=$totalc;$i++){
 
 }
 //echo "<pre>";
