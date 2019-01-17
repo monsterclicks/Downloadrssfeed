@@ -22,7 +22,7 @@ echo "=================<pre>";
    if($strpos($template,$find_ifequalvoltn_cat) != FALSE){
      $parts = explode("_",$find_ifequalvoltn_cat);
      //$var = $data['data']['recs'][$i]['props']['category'];
-     $var = $parts[2]
+     $var = $parts[2];
      $comparison = $parts[3];
      $result = $parts[4];
      $else = $parts[5];
