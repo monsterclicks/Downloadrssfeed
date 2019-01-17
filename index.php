@@ -13,5 +13,5 @@ function getFeed($feed_url) {
 
 }
 
-getFeed('http://downloadrss.test/feed.json');
+getFeed('feed.json');
 ?>
