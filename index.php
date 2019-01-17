@@ -13,5 +13,5 @@ function getFeed($feed_url) {
 
 }
 
-getFeed('https://edavis.github.io/hnrss/');
+getFeed('https://hnrss.org/newest');
 ?>
