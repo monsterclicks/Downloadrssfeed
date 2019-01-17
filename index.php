@@ -5,18 +5,18 @@ $newdata = str_replace("\\","",$cont);
 $data = json_decode($newdata, true);
 //file_put_contents("/tmp/tmp.txt",$cont);
 //$newdata = file_get_contents("/tmp/tmp.txt");
-echo _DIR_."</br>";
+echo __DIR__."</br>";
 
 //$template = file_get_contents(_DIR_ .'test_template.html');
 $totalc = count($data['data']['recs']);
 echo "{$totalc}</br>";
 //$datatoarray = get_object_vars($data);
 //var_dump($data);
-echo "=================";
-var_dump($data1);
-// for($i=0;$i<=$totalc;$i++){
-//
-// }
+echo "=================<pre>";
+//var_dump($data1);
+ for($i=0;$i<=$totalc;$i++){
+  var_dump($data['data']['recs'][$i]);
+ }
 //echo "<pre>";
 // foreach($data->data->recs as $item){
 //   $id = $item->id;
@@ -28,5 +28,5 @@ var_dump($data1);
 //   echo "{$id} - {$cat} - {$tit}</br>{$des}</br>{$thum}</br>";
 // }
 //var_dump($data);
-//echo "</pre>";
+echo "</pre>";
 ?>
