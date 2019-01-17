@@ -8,7 +8,7 @@ $data = json_decode($newdata, true);
 
 echo __DIR__."</br>";
 
-$template = file_get_contents(__DIR__ .'/test_test.html');
+$template = file_get_contents(__DIR__ .'/test_template.html');
 $totalc = count($data['data']['recs']);
 echo "{$totalc}</br>";
 //$datatoarray = get_object_vars($data);
