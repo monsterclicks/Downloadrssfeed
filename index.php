@@ -1,7 +1,9 @@
 <?php
 set_time_limit(0);
-$cont = file_get_contents('https://api.blootle.com/topix_articles_get?count=5&bt_email=[-EMAILADDR-]&filter=%7B%22resource_type%22%3A%5B%22Offbeat%22%5D%7D');
-$data1 = json_decode($cont, true);
+$cont = file_get_contents("https://api.blootle.com/topix_articles_get?count=5&bt_email=[-EMAILADDR-]&filter=%7B%22resource_type%22%3A%5B%22Offbeat%22%5D%7D");
+file_put_contents("/tmp/tmp.txt",$cont);
+$newdata = file_get_contents("/tmp/tmp.txt");
+$data1 = json_decode($newdata, true);
 $data=array();
 array_push($data,$data1);
 //$template = file_get_contents(__DIR__ .'test_template.html');
@@ -9,7 +11,7 @@ array_push($data,$data1);
 //$datatoarray = get_object_vars($data);
 var_dump($data);
 echo "=================";
-var_dump($cont);
+var_dump($data1);
 // for($i=0;$i<=$totalc;$i++){
 //
 // }
