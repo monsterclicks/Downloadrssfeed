@@ -58,7 +58,7 @@ $content = '{
 }
 ';
 
-$cont = file_get_contents('https://api.blootle.com/topix_articles_get?count=5&bt_email=vietlucky@gmail.com&filter=%7B%22resource_type%22%3A%5B%22Offbeat%22%5D%7D');
+$cont = file_get_contents('https://api.blootle.com/topix_articles_get?count=5&bt_email=vietlucky@gmail.com&filter=&resource_type=Offbeat');
 $data = json_decode($cont);
 //echo "<pre>";
 foreach($data->data->recs as $item){
