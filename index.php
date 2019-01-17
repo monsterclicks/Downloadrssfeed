@@ -1,12 +1,15 @@
 <?php
 set_time_limit(0);
 $cont = file_get_contents("https://api.blootle.com/topix_articles_get?count=5&bt_email=[-EMAILADDR-]&filter=%7B%22resource_type%22%3A%5B%22Offbeat%22%5D%7D");
+$newdata = str_replace("\\","",$cont);
+$data = json_decode($newdata, true);
 //file_put_contents("/tmp/tmp.txt",$cont);
 //$newdata = file_get_contents("/tmp/tmp.txt");
-$newdata = str_replace("\\","",$cont);
-$data1 = json_decode($newdata, true);
-//$template = file_get_contents(__DIR__ .'test_template.html');
-//$totalc = count($data->data->recs);
+echo _DIR_."</br>";
+
+//$template = file_get_contents(_DIR_ .'test_template.html');
+$totalc = count($data['data']['recs']);
+echo "{$totalc}</br>";
 //$datatoarray = get_object_vars($data);
 //var_dump($data);
 echo "=================";
