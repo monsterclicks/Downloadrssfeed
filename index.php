@@ -13,11 +13,13 @@ $totalc = count($data['data']['recs']);
 echo "{$totalc}</br>";
 //$datatoarray = get_object_vars($data);
 //var_dump($data);
-echo "=================<pre>";
 var_dump($data);
+echo "=================<pre>";
+
  for($i=0;$i<=$totalc;$i++){
-   echo "[VOLTN_TITLE_".$i."]"." - ". $data['data']['recs'][$i]['props']['title']."</br>";
-  $data2 = str_replace("[VOLTN_TITLE_".$i."]",$data['data']['recs'][$i]['props']['title'],$template);
+   var_dump($data['data']['recs'][$i]);
+  //  echo "[VOLTN_TITLE_".$i."]"." - ". $data['data']['recs'][$i]['props']['title']."</br>";
+  // $data2 = str_replace("[VOLTN_TITLE_".$i."]",$data['data']['recs'][$i]['props']['title'],$template);
   // $data2 = str_replace("[VOLTN_DESCRIPTION_".$i."]",$data['data']['recs'][$i]['props']['description'],$data2);
   // $data2 = str_replace("[VOLTN_CATEGORY_".$i."]",$data['data']['recs'][$i]['props']['category'],$data2);
   // $data2 = str_replace("[VOLTN_THUMBNAIL_".$i."]",$data['data']['recs'][$i]['props']['thumbnail'],$data2);
