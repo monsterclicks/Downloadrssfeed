@@ -16,7 +16,7 @@ echo "{$totalc}</br>";
 echo "=================<pre>";
 var_dump($data);
  for($i=0;$i<=$totalc;$i++){
-   echo "[VOLTN_TITLE_".$i."]";
+   echo "[VOLTN_TITLE_".$i."]"." - ". $data['data']['recs'][$i]['props']['title']."</br>";
   $data2 = str_replace("[VOLTN_TITLE_".$i."]",$data['data']['recs'][$i]['props']['title'],$template);
   // $data2 = str_replace("[VOLTN_DESCRIPTION_".$i."]",$data['data']['recs'][$i]['props']['description'],$data2);
   // $data2 = str_replace("[VOLTN_CATEGORY_".$i."]",$data['data']['recs'][$i]['props']['category'],$data2);
