@@ -62,7 +62,7 @@ foreach($data->data->recs as $item){
   $id = $item->id;
   $cat = $item->props->category;
   $des = $item->props->description;
-  $thum = $item->props->thumbnail
+  $thum = $item->props->thumbnail;
   $tit = $item->props->title;
   $url = $item->props->url;
   echo "{$id} - {$cat} - {$tit}</br>{$des}</br>{$thum}</br>";
