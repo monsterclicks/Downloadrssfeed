@@ -57,10 +57,16 @@ $content = '{
 }
 ';
 $data = json_decode($content);
-echo "<pre>";
+//echo "<pre>";
 foreach($data->data->recs as $item){
-  var_dump($item);
+  $id = $item->id;
+  $cat = $item->props->category;
+  $des = $item->props->description;
+  $thum = $item->props->thumbnail
+  $tit = $item->props->title;
+  $url = $item->props->url;
+  echo "{$id} - {$cat} - {$tit}</br>{$des}</br>{$thum}</br>";
 }
 //var_dump($data);
-echo "</pre>";
+//echo "</pre>";
 ?>
