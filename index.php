@@ -58,9 +58,9 @@ $content = '{
 ';
 $data = json_decode($content);
 echo "<pre>";
-// foreach($data->id as $item){
-//   var_dump($item);
-// }
-var_dump($data);
+foreach($data->recs as $item){
+  var_dump($item);
+}
+//var_dump($data);
 echo "</pre>";
 ?>
