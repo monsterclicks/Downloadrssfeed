@@ -18,7 +18,7 @@ echo "=================<pre>";
 
  for($i=1;$i<=$totalc;$i++){
    $find_ifequalvoltn_cat_a = strstr($template,"[IFEQUALVOLTN_CAT");
-   $find_ifequalvoltn_cat = strstr($find_ifequalvoltn_cat_a," ",true);
+   $find_ifequalvoltn_cat = strstr($find_ifequalvoltn_cat_a,"]",true)."]";
    if($strpos($template,$find_ifequalvoltn_cat) != FALSE){
      $parts = explode("_",$find_ifequalvoltn_cat);
      $var = "[VOLTN_CATEGORY_{$i}]";
