@@ -3,7 +3,7 @@ function getFeed($feed_url) {
 
     $content = file_get_contents($feed_url);
     //$x = new SimpleXmlElement($content);
-    $x = jsondecode($content);
+    $x = json_decode($content);
     echo "<ul>";
 
     foreach($x->data->recs as $entry) {
