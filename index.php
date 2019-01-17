@@ -64,6 +64,8 @@ $data = json_decode($cont);
 //$totalc = count($data->data->recs);
 //$datatoarray = get_object_vars($data);
 var_dump($data);
+echo "=================";
+var_dump($cont);
 // for($i=0;$i<=$totalc;$i++){
 //
 // }
