@@ -59,7 +59,7 @@ $content = '{
 ';
 
 $cont = file_get_contents('https://api.blootle.com/topix_articles_get?count=5&bt_email=[-EMAILADDR-]&filter=%7B%22resource_type%22%3A%5B%22Offbeat%22%5D%7D');
-$data = json_decode($cont);
+$data = json_decode($cont, true);
 //$template = file_get_contents(__DIR__ .'test_template.html');
 //$totalc = count($data->data->recs);
 //$datatoarray = get_object_vars($data);
