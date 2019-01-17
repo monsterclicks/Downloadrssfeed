@@ -215,7 +215,6 @@
 																	</tr>
 																</tbody>
 															</table>
-															[$$$each i:[2..4]
 <!-- Article 1 -->
 
 															<table align="left" border="0" cellpadding="0" cellspacing="0" class="devicewidth tbl-shadow" style="border: 1px solid #cacaca; box-shadow: 1px 5px 10px #cacaca;border-bottom-left-radius: 4px;border-bottom-right-radius: 4px;min-height: 250px" width="170">
@@ -224,7 +223,7 @@
 																		<td><a href="[VOLTN_URL_2]?utm_source=bloo-bt&utm_campaign=[VOLTN_ID_2]&utm_term=[-RECIPID-]"><img alt="[VOLTN_TITLE_2]" border="0" class="bigimage" height="85" src="[VOLTN_THUMBNAIL_2]" style="display:block; border:none; outline:none; text-decoration:none;" width="170" /></a></td>
 																	</tr>
 																	<tr>
-																		<td align="center" style="background-color: #31577a; padding: 5px 0;"><a href="[VOLTN_URL_2]?utm_source=bloo-bt&utm_campaign=[VOLTN_URL_2]&utm_term=[-RECIPID-]" style="color:#ffffff; text-decoration:none; font-size: 12px; text-align:center; font-weight:bold;">[$if_equal([$data.recs[$i].props.category],quiz,PLAY NOW,START NOW)] &gt;</a></td>
+																		<td align="center" style="background-color: #31577a; padding: 5px 0;"><a href="[VOLTN_URL_2]?utm_source=bloo-bt&utm_campaign=[VOLTN_URL_2]&utm_term=[-RECIPID-]" style="color:#ffffff; text-decoration:none; font-size: 12px; text-align:center; font-weight:bold;">[IFEQUALVOLTN_CAT_2,quiz,PLAY NOW,START NOW)] &gt;</a></td>
 																	</tr>
 																	<tr>
 																		<td align="center" height="100%" valign="top">
@@ -281,186 +280,186 @@
 
 
                               <table align="left" border="0" cellpadding="0" cellspacing="0" class="devicewidth tbl-shadow" style="border: 1px solid #cacaca; box-shadow: 1px 5px 10px #cacaca;border-bottom-left-radius: 4px;border-bottom-right-radius: 4px;min-height: 250px" width="170">
-																<tbody>
-																	<tr>
-																		<td><a href="[$data.recs[$i].props.url]?utm_source=bloo-bt&utm_campaign=[$data.recs[$i].id]&utm_term=[-RECIPID-]"><img alt="[$data.recs[$i].props.title]" border="0" class="bigimage" height="85" src="[$data.recs[$i].props.thumbnail]" style="display:block; border:none; outline:none; text-decoration:none;" width="170" /></a></td>
-																	</tr>
-																	<tr>
-																		<td align="center" style="background-color: #31577a; padding: 5px 0;"><a href="[$data.recs[$i].props.url]?utm_source=bloo-bt&utm_campaign=[$data.recs[$i].id]&utm_term=[-RECIPID-]" style="color:#ffffff; text-decoration:none; font-size: 12px; text-align:center; font-weight:bold;">[$if_equal([$data.recs[$i].props.category],quiz,PLAY NOW,START NOW)] &gt;</a></td>
-																	</tr>
-																	<tr>
-																		<td align="center" height="100%" valign="top">
-																		<table border="0" cellpadding="0" cellspacing="0" class="devicewidth" style="border-collapse: collapse;" width="150">
-																			<tbody>
-																				<tr>
-																					<td height="10"></td>
-																				</tr>
-																				<tr>
-																					<td align="center" valign="top">
-																					<table align="center" border="0" cellpadding="0" cellspacing="0" width="98%" class="devicewidthinner">
-																						<tbody>
-																							<tr>
-																								<td style="text-align:left; font-size: 15px;"><a href="[$data.recs[$i].props.url]?utm_source=bloo-bt&utm_campaign=[$data.recs[$i].id]&utm_term=[-RECIPID-]" style=" font-weight: bold; color: #505050; text-decoration: none;" class="bigTitleMobile">[$data.recs[$i].props.title]</a></td>
-																							</tr>
-																							<tr>
-																								<td height="10"></td>
-																							</tr>
-																							<tr>
-																								<td style="text-align:left; line-height: 15px; font-size: 12px;"><span style=" color: #808080;" class="bigTextMobile">[$data.recs[$i].props.description]</span></td>
-																							</tr>
-																						</tbody>
-																					</table>
-																					</td>
-																				</tr>
-																				<tr>
-																					<td height="10"></td>
-																				</tr>
-																			</tbody>
-																		</table>
-																		</td>
-																	</tr>
-																</tbody>
-															</table>
-															<!-- Space -->
+                                <tbody>
+                                  <tr>
+                                    <td><a href="[VOLTN_URL_3]?utm_source=bloo-bt&utm_campaign=[VOLTN_ID_3]&utm_term=[-RECIPID-]"><img alt="[VOLTN_TITLE_3]" border="0" class="bigimage" height="85" src="[VOLTN_THUMBNAIL_3]" style="display:block; border:none; outline:none; text-decoration:none;" width="170" /></a></td>
+                                  </tr>
+                                  <tr>
+                                    <td align="center" style="background-color: #31577a; padding: 5px 0;"><a href="[VOLTN_URL_3]?utm_source=bloo-bt&utm_campaign=[VOLTN_URL_3]&utm_term=[-RECIPID-]" style="color:#ffffff; text-decoration:none; font-size: 12px; text-align:center; font-weight:bold;">[IFEQUALVOLTN_CAT_2,quiz,PLAY NOW,START NOW)] &gt;</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td align="center" height="100%" valign="top">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="devicewidth" style="border-collapse: collapse;" width="150">
+                                      <tbody>
+                                        <tr>
+                                          <td height="10"></td>
+                                        </tr>
+                                        <tr>
+                                          <td align="center" valign="top">
+                                          <table align="center" border="0" cellpadding="0" cellspacing="0" width="98%" class="devicewidthinner">
+                                            <tbody>
+                                              <tr>
+                                                <td style="text-align:left; font-size: 15px;"><a href="[VOLTN_URL_3]?utm_source=bloo-bt&utm_campaign=[VOLTN_ID_1]&utm_term=[-RECIPID-]" style=" font-weight: bold; color: #505050; text-decoration: none;" class="bigTitleMobile">[VOLTN_TITLE_3]</a></td>
+                                              </tr>
+                                              <tr>
+                                                <td height="10"></td>
+                                              </tr>
+                                              <tr>
+                                                <td style="text-align:left; line-height: 15px; font-size: 12px;"><span style=" color: #808080;" class="bigTextMobile">[VOLTN_DESCRIPTION_3]</span></td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td height="10"></td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!-- Space -->
 
-															<table align="left" border="0" cellpadding="0" cellspacing="0" class="mobilespacing" width="13">
-																<tbody>
-																	<tr>
-																		<td height="5" style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;" width="100%"></td>
-																	</tr>
-																</tbody>
-															</table>
+                              <table align="left" border="0" cellpadding="0" cellspacing="0" class="mobilespacing" width="13">
+                                <tbody>
+                                  <tr>
+                                    <td height="5" style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;" width="100%"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
 
-															<!-- Vertical space on mobile -->
-															<table width="13" align="left" border="0" cellpadding="0" cellspacing="0" class="showOnMobile">
-																<tbody>
-																	<tr>
-																		<td width="100%" height="20" style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;"></td>
-																	</tr>
-																</tbody>
-															</table>
-
-                              <table align="left" border="0" cellpadding="0" cellspacing="0" class="devicewidth tbl-shadow" style="border: 1px solid #cacaca; box-shadow: 1px 5px 10px #cacaca;border-bottom-left-radius: 4px;border-bottom-right-radius: 4px;min-height: 250px" width="170">
-																<tbody>
-																	<tr>
-																		<td><a href="[$data.recs[$i].props.url]?utm_source=bloo-bt&utm_campaign=[$data.recs[$i].id]&utm_term=[-RECIPID-]"><img alt="[$data.recs[$i].props.title]" border="0" class="bigimage" height="85" src="[$data.recs[$i].props.thumbnail]" style="display:block; border:none; outline:none; text-decoration:none;" width="170" /></a></td>
-																	</tr>
-																	<tr>
-																		<td align="center" style="background-color: #31577a; padding: 5px 0;"><a href="[$data.recs[$i].props.url]?utm_source=bloo-bt&utm_campaign=[$data.recs[$i].id]&utm_term=[-RECIPID-]" style="color:#ffffff; text-decoration:none; font-size: 12px; text-align:center; font-weight:bold;">[$if_equal([$data.recs[$i].props.category],quiz,PLAY NOW,START NOW)] &gt;</a></td>
-																	</tr>
-																	<tr>
-																		<td align="center" height="100%" valign="top">
-																		<table border="0" cellpadding="0" cellspacing="0" class="devicewidth" style="border-collapse: collapse;" width="150">
-																			<tbody>
-																				<tr>
-																					<td height="10"></td>
-																				</tr>
-																				<tr>
-																					<td align="center" valign="top">
-																					<table align="center" border="0" cellpadding="0" cellspacing="0" width="98%" class="devicewidthinner">
-																						<tbody>
-																							<tr>
-																								<td style="text-align:left; font-size: 15px;"><a href="[$data.recs[$i].props.url]?utm_source=bloo-bt&utm_campaign=[$data.recs[$i].id]&utm_term=[-RECIPID-]" style=" font-weight: bold; color: #505050; text-decoration: none;" class="bigTitleMobile">[$data.recs[$i].props.title]</a></td>
-																							</tr>
-																							<tr>
-																								<td height="10"></td>
-																							</tr>
-																							<tr>
-																								<td style="text-align:left; line-height: 15px; font-size: 12px;"><span style=" color: #808080;" class="bigTextMobile">[$data.recs[$i].props.description]</span></td>
-																							</tr>
-																						</tbody>
-																					</table>
-																					</td>
-																				</tr>
-																				<tr>
-																					<td height="10"></td>
-																				</tr>
-																			</tbody>
-																		</table>
-																		</td>
-																	</tr>
-																</tbody>
-															</table>
-															<!-- Space -->
-
-															<table align="left" border="0" cellpadding="0" cellspacing="0" class="mobilespacing" width="13">
-																<tbody>
-																	<tr>
-																		<td height="5" style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;" width="100%"></td>
-																	</tr>
-																</tbody>
-															</table>
-
-															<!-- Vertical space on mobile -->
-															<table width="13" align="left" border="0" cellpadding="0" cellspacing="0" class="showOnMobile">
-																<tbody>
-																	<tr>
-																		<td width="100%" height="20" style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;"></td>
-																	</tr>
-																</tbody>
-															</table>
+                              <!-- Vertical space on mobile -->
+                              <table width="13" align="left" border="0" cellpadding="0" cellspacing="0" class="showOnMobile">
+                                <tbody>
+                                  <tr>
+                                    <td width="100%" height="20" style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
 
                               <table align="left" border="0" cellpadding="0" cellspacing="0" class="devicewidth tbl-shadow" style="border: 1px solid #cacaca; box-shadow: 1px 5px 10px #cacaca;border-bottom-left-radius: 4px;border-bottom-right-radius: 4px;min-height: 250px" width="170">
-																<tbody>
-																	<tr>
-																		<td><a href="[$data.recs[$i].props.url]?utm_source=bloo-bt&utm_campaign=[$data.recs[$i].id]&utm_term=[-RECIPID-]"><img alt="[$data.recs[$i].props.title]" border="0" class="bigimage" height="85" src="[$data.recs[$i].props.thumbnail]" style="display:block; border:none; outline:none; text-decoration:none;" width="170" /></a></td>
-																	</tr>
-																	<tr>
-																		<td align="center" style="background-color: #31577a; padding: 5px 0;"><a href="[$data.recs[$i].props.url]?utm_source=bloo-bt&utm_campaign=[$data.recs[$i].id]&utm_term=[-RECIPID-]" style="color:#ffffff; text-decoration:none; font-size: 12px; text-align:center; font-weight:bold;">[$if_equal([$data.recs[$i].props.category],quiz,PLAY NOW,START NOW)] &gt;</a></td>
-																	</tr>
-																	<tr>
-																		<td align="center" height="100%" valign="top">
-																		<table border="0" cellpadding="0" cellspacing="0" class="devicewidth" style="border-collapse: collapse;" width="150">
-																			<tbody>
-																				<tr>
-																					<td height="10"></td>
-																				</tr>
-																				<tr>
-																					<td align="center" valign="top">
-																					<table align="center" border="0" cellpadding="0" cellspacing="0" width="98%" class="devicewidthinner">
-																						<tbody>
-																							<tr>
-																								<td style="text-align:left; font-size: 15px;"><a href="[$data.recs[$i].props.url]?utm_source=bloo-bt&utm_campaign=[$data.recs[$i].id]&utm_term=[-RECIPID-]" style=" font-weight: bold; color: #505050; text-decoration: none;" class="bigTitleMobile">[$data.recs[$i].props.title]</a></td>
-																							</tr>
-																							<tr>
-																								<td height="10"></td>
-																							</tr>
-																							<tr>
-																								<td style="text-align:left; line-height: 15px; font-size: 12px;"><span style=" color: #808080;" class="bigTextMobile">[$data.recs[$i].props.description]</span></td>
-																							</tr>
-																						</tbody>
-																					</table>
-																					</td>
-																				</tr>
-																				<tr>
-																					<td height="10"></td>
-																				</tr>
-																			</tbody>
-																		</table>
-																		</td>
-																	</tr>
-																</tbody>
-															</table>
-															<!-- Space -->
+                                <tbody>
+                                  <tr>
+                                    <td><a href="[VOLTN_URL_4]?utm_source=bloo-bt&utm_campaign=[VOLTN_ID_4]&utm_term=[-RECIPID-]"><img alt="[VOLTN_TITLE_4]" border="0" class="bigimage" height="85" src="[VOLTN_THUMBNAIL_4]" style="display:block; border:none; outline:none; text-decoration:none;" width="170" /></a></td>
+                                  </tr>
+                                  <tr>
+                                    <td align="center" style="background-color: #31577a; padding: 5px 0;"><a href="[VOLTN_URL_4]?utm_source=bloo-bt&utm_campaign=[VOLTN_URL_4]&utm_term=[-RECIPID-]" style="color:#ffffff; text-decoration:none; font-size: 12px; text-align:center; font-weight:bold;">[IFEQUALVOLTN_CAT_2,quiz,PLAY NOW,START NOW)] &gt;</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td align="center" height="100%" valign="top">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="devicewidth" style="border-collapse: collapse;" width="150">
+                                      <tbody>
+                                        <tr>
+                                          <td height="10"></td>
+                                        </tr>
+                                        <tr>
+                                          <td align="center" valign="top">
+                                          <table align="center" border="0" cellpadding="0" cellspacing="0" width="98%" class="devicewidthinner">
+                                            <tbody>
+                                              <tr>
+                                                <td style="text-align:left; font-size: 15px;"><a href="[VOLTN_URL_4]?utm_source=bloo-bt&utm_campaign=[VOLTN_ID_1]&utm_term=[-RECIPID-]" style=" font-weight: bold; color: #505050; text-decoration: none;" class="bigTitleMobile">[VOLTN_TITLE_4]</a></td>
+                                              </tr>
+                                              <tr>
+                                                <td height="10"></td>
+                                              </tr>
+                                              <tr>
+                                                <td style="text-align:left; line-height: 15px; font-size: 12px;"><span style=" color: #808080;" class="bigTextMobile">[VOLTN_DESCRIPTION_4]</span></td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td height="10"></td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!-- Space -->
 
-															<table align="left" border="0" cellpadding="0" cellspacing="0" class="mobilespacing" width="13">
-																<tbody>
-																	<tr>
-																		<td height="5" style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;" width="100%"></td>
-																	</tr>
-																</tbody>
-															</table>
+                              <table align="left" border="0" cellpadding="0" cellspacing="0" class="mobilespacing" width="13">
+                                <tbody>
+                                  <tr>
+                                    <td height="5" style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;" width="100%"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
 
-															<!-- Vertical space on mobile -->
-															<table width="13" align="left" border="0" cellpadding="0" cellspacing="0" class="showOnMobile">
-																<tbody>
-																	<tr>
-																		<td width="100%" height="20" style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;"></td>
-																	</tr>
-																</tbody>
-															</table>
+                              <!-- Vertical space on mobile -->
+                              <table width="13" align="left" border="0" cellpadding="0" cellspacing="0" class="showOnMobile">
+                                <tbody>
+                                  <tr>
+                                    <td width="100%" height="20" style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
 
-															$$]<!-- Article 2 --><!-- Space -->
+                              <table align="left" border="0" cellpadding="0" cellspacing="0" class="devicewidth tbl-shadow" style="border: 1px solid #cacaca; box-shadow: 1px 5px 10px #cacaca;border-bottom-left-radius: 4px;border-bottom-right-radius: 4px;min-height: 250px" width="170">
+                                <tbody>
+                                  <tr>
+                                    <td><a href="[VOLTN_URL_5]?utm_source=bloo-bt&utm_campaign=[VOLTN_ID_5]&utm_term=[-RECIPID-]"><img alt="[VOLTN_TITLE_5]" border="0" class="bigimage" height="85" src="[VOLTN_THUMBNAIL_5]" style="display:block; border:none; outline:none; text-decoration:none;" width="170" /></a></td>
+                                  </tr>
+                                  <tr>
+                                    <td align="center" style="background-color: #31577a; padding: 5px 0;"><a href="[VOLTN_URL_5]?utm_source=bloo-bt&utm_campaign=[VOLTN_URL_5]&utm_term=[-RECIPID-]" style="color:#ffffff; text-decoration:none; font-size: 12px; text-align:center; font-weight:bold;">[IFEQUALVOLTN_CAT_2,quiz,PLAY NOW,START NOW)] &gt;</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td align="center" height="100%" valign="top">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="devicewidth" style="border-collapse: collapse;" width="150">
+                                      <tbody>
+                                        <tr>
+                                          <td height="10"></td>
+                                        </tr>
+                                        <tr>
+                                          <td align="center" valign="top">
+                                          <table align="center" border="0" cellpadding="0" cellspacing="0" width="98%" class="devicewidthinner">
+                                            <tbody>
+                                              <tr>
+                                                <td style="text-align:left; font-size: 15px;"><a href="[VOLTN_URL_5]?utm_source=bloo-bt&utm_campaign=[VOLTN_ID_1]&utm_term=[-RECIPID-]" style=" font-weight: bold; color: #505050; text-decoration: none;" class="bigTitleMobile">[VOLTN_TITLE_5]</a></td>
+                                              </tr>
+                                              <tr>
+                                                <td height="10"></td>
+                                              </tr>
+                                              <tr>
+                                                <td style="text-align:left; line-height: 15px; font-size: 12px;"><span style=" color: #808080;" class="bigTextMobile">[VOLTN_DESCRIPTION_5]</span></td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td height="10"></td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!-- Space -->
+
+                              <table align="left" border="0" cellpadding="0" cellspacing="0" class="mobilespacing" width="13">
+                                <tbody>
+                                  <tr>
+                                    <td height="5" style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;" width="100%"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                              <!-- Vertical space on mobile -->
+                              <table width="13" align="left" border="0" cellpadding="0" cellspacing="0" class="showOnMobile">
+                                <tbody>
+                                  <tr>
+                                    <td width="100%" height="20" style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+															<!-- Article 2 --><!-- Space -->
 
 															</td>
 														</tr>

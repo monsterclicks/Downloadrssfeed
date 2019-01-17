@@ -10,6 +10,9 @@ echo __DIR__."</br>";
 
 $template = file_get_contents(__DIR__ .'/test_template.html');
 $totalc = count($data['data']['recs']);
+if ($totalc == 0){
+  die('Did not get any response from API');
+}
 echo "{$totalc}</br>";
 //$datatoarray = get_object_vars($data);
 //var_dump($data);
