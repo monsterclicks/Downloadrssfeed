@@ -57,7 +57,7 @@ function if_equal_tag($string){
   }
 }
 
-$template
+
 echo $template;
 
 
