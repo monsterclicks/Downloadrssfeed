@@ -13,5 +13,5 @@ function getFeed($feed_url) {
 
 }
 
-getFeed('https://www.foxnews.com/rss/index.html');
+getFeed('https://edavis.github.io/hnrss/');
 ?>
