@@ -12,5 +12,5 @@ function getFeed($feed_url) {
     echo "</ul>";
 }
 
-getFeed('http://feedproxy.google.com/nettuts');
+getFeed('http://billmaher.hbo.libsynpro.com/rss');
 ?>
