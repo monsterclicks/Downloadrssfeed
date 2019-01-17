@@ -45,7 +45,7 @@ echo "=================<pre>";
  }
 echo "=====================</br>";
 
-var_dump($template);
+//var_dump($template);
 echo $template;
 
 
