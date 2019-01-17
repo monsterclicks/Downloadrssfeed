@@ -7,7 +7,7 @@ $data = json_decode($newdata, true);
 //$newdata = file_get_contents("/tmp/tmp.txt");
 echo __DIR__."</br>";
 
-//$template = file_get_contents(_DIR_ .'test_template.html');
+$template = file_get_contents(__DIR__ .'/test_test.html');
 $totalc = count($data['data']['recs']);
 echo "{$totalc}</br>";
 //$datatoarray = get_object_vars($data);
@@ -15,8 +15,17 @@ echo "{$totalc}</br>";
 echo "=================<pre>";
 //var_dump($data1);
  for($i=0;$i<=$totalc;$i++){
-  var_dump($data['data']['recs'][$i]);
+  $data2 = str_replace("[VOLTN_TITLE_".$i."]",$data['data']['recs'][$i]['props']['title'],$template);
+  $data2 = str_replace("[VOLTN_DESCRIPTION_".$i."]",$data['data']['recs'][$i]['props']['description'],$template);
+  $data2 = str_replace("[VOLTN_CATEGORY_".$i."]",$data['data']['recs'][$i]['props']['category'],$template);
+  $data2 = str_replace("[VOLTN_THUMBNAIL_".$i."]",$data['data']['recs'][$i]['props']['thumbnail'],$template);
+  $data2 = str_replace("[VOLTN_URL_".$i."]",$data['data']['recs'][$i]['props']['url'],$template);
  }
+echo "=====================</br>";
+
+echo $data;
+
+
 //echo "<pre>";
 // foreach($data->data->recs as $item){
 //   $id = $item->id;
