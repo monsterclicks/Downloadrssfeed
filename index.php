@@ -62,11 +62,11 @@ $cont = file_get_contents('https://api.blootle.com/topix_articles_get?count=5&bt
 $data = json_decode($cont);
 //$template = file_get_contents(__DIR__ .'test_template.html');
 //$totalc = count($data->data->recs);
-$datatoarray = get_object_vars($data);
-var_dump($datatoarray);
-for($i=0;$i<=$totalc;$i++){
-
-}
+//$datatoarray = get_object_vars($data);
+var_dump($data);
+// for($i=0;$i<=$totalc;$i++){
+//
+// }
 //echo "<pre>";
 // foreach($data->data->recs as $item){
 //   $id = $item->id;
