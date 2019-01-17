@@ -6,18 +6,18 @@ $data = json_decode($newdata, true);
 //file_put_contents("/tmp/tmp.txt",$cont);
 //$newdata = file_get_contents("/tmp/tmp.txt");
 
-echo __DIR__."</br>";
+//echo __DIR__."</br>";
 
 $template = file_get_contents(__DIR__ .'/test_template.html');
 $totalc = count($data['data']['recs']);
 if ($totalc == 0){
   die('Did not get any response from API');
 }
-echo "{$totalc}</br>";
+//echo "{$totalc}</br>";
 //$datatoarray = get_object_vars($data);
 //var_dump($data);
-var_dump($data);
-echo "=================<pre>";
+//var_dump($data);
+//echo "=================<pre>";
 
  for($i=1;$i<=$totalc;$i++){
    $find_ifequalvoltn_cat_a = strstr($template,"[IFEQUALVOLTN_CAT_{$i}");
@@ -33,7 +33,7 @@ echo "=================<pre>";
      $template = str_replace($find_ifequalvoltn_cat,$replacement,$template);
    }
    //var_dump($data['data']['recs'][$i]['props']['title']);
-    echo "[VOLTN_TITLE_{$i}] - ". $data['data']['recs'][$i]['props']['title']."</br>";
+    //echo "[VOLTN_TITLE_{$i}] - ". $data['data']['recs'][$i]['props']['title']."</br>";
    $template = str_replace("[VOLTN_TITLE_{$i}",$data['data']['recs'][$i]['props']['title'],$template);
    $template = str_replace("[VOLTN_DESCRIPTION_".$i."",$data['data']['recs'][$i]['props']['description'],$template);
    $template = str_replace("[VOLTN_CATEGORY_".$i."",$data['data']['recs'][$i]['props']['category'],$template);
@@ -43,7 +43,7 @@ echo "=================<pre>";
 
 
  }
-echo "=====================</br>";
+//echo "=====================</br>";
 
 //var_dump($template);
 echo $template;
@@ -60,5 +60,5 @@ echo $template;
 //   echo "{$id} - {$cat} - {$tit}</br>{$des}</br>{$thum}</br>";
 // }
 //var_dump($data);
-echo "</pre>";
+//echo "</pre>";
 ?>
