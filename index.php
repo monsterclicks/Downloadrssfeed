@@ -31,12 +31,12 @@ echo "=================<pre>";
    }
    //var_dump($data['data']['recs'][$i]['props']['title']);
     echo "[VOLTN_TITLE_{$i}] - ". $data['data']['recs'][$i]['props']['title']."</br>";
-   $template = str_replace("[VOLTN_TITLE_{$i}]",$data['data']['recs'][$i]['props']['title'],$template);
-   $template = str_replace("[VOLTN_DESCRIPTION_".$i."]",$data['data']['recs'][$i]['props']['description'],$template);
-   $template = str_replace("[VOLTN_CATEGORY_".$i."]",$data['data']['recs'][$i]['props']['category'],$template);
-   $template = str_replace("[VOLTN_THUMBNAIL_".$i."]",$data['data']['recs'][$i]['props']['thumbnail'],$template);
-   $template = str_replace("[VOLTN_URL_".$i."]",$data['data']['recs'][$i]['props']['url'],$template);
-   $template = str_replace("[VOLTN_ID_".$i."]",$data['data']['recs'][$i]['id'],$template);
+   $template = str_replace("[VOLTN_TITLE_{$i}",$data['data']['recs'][$i]['props']['title'],$template);
+   $template = str_replace("[VOLTN_DESCRIPTION_".$i."",$data['data']['recs'][$i]['props']['description'],$template);
+   $template = str_replace("[VOLTN_CATEGORY_".$i."",$data['data']['recs'][$i]['props']['category'],$template);
+   $template = str_replace("[VOLTN_THUMBNAIL_".$i."",$data['data']['recs'][$i]['props']['thumbnail'],$template);
+   $template = str_replace("[VOLTN_URL_".$i."",$data['data']['recs'][$i]['props']['url'],$template);
+   $template = str_replace("[VOLTN_ID_".$i."",$data['data']['recs'][$i]['id'],$template);
 
 
  }
