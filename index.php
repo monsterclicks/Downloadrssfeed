@@ -23,7 +23,7 @@ echo "=================<pre>";
  }
 echo "=====================</br>";
 
-echo $data;
+echo $data2;
 
 
 //echo "<pre>";
