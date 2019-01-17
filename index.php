@@ -16,7 +16,7 @@ echo "{$totalc}</br>";
 var_dump($data);
 echo "=================<pre>";
 
- for($i=0;$i<=$totalc;$i++){
+ for($i=1;$i<=$totalc;$i++){
    //var_dump($data['data']['recs'][$i]['props']['title']);
     echo "[VOLTN_TITLE_{$i}] - ". $data['data']['recs'][$i]['props']['title']."</br>";
    $template = str_replace("[VOLTN_TITLE_{$i}]",$data['data']['recs'][$i]['props']['title'],$template);
@@ -24,6 +24,7 @@ echo "=================<pre>";
    $template = str_replace("[VOLTN_CATEGORY_".$i."]",$data['data']['recs'][$i]['props']['category'],$template);
    $template = str_replace("[VOLTN_THUMBNAIL_".$i."]",$data['data']['recs'][$i]['props']['thumbnail'],$template);
    $template = str_replace("[VOLTN_URL_".$i."]",$data['data']['recs'][$i]['props']['url'],$template);
+   $template = str_replace("[VOLTN_ID_".$i."]",$data['data']['recs'][$i]['id'],$template);
  }
 echo "=====================</br>";
 
