@@ -5,6 +5,7 @@ $newdata = str_replace("\\","",$cont);
 $data = json_decode($newdata, true);
 //file_put_contents("/tmp/tmp.txt",$cont);
 //$newdata = file_get_contents("/tmp/tmp.txt");
+
 echo __DIR__."</br>";
 
 $template = file_get_contents(__DIR__ .'/test_test.html');
@@ -13,7 +14,7 @@ echo "{$totalc}</br>";
 //$datatoarray = get_object_vars($data);
 //var_dump($data);
 echo "=================<pre>";
-//var_dump($data1);
+var_dump($data);
  for($i=0;$i<=$totalc;$i++){
   $data2 = str_replace("[VOLTN_TITLE_".$i."]",$data['data']['recs'][$i]['props']['title'],$template);
   $data2 = str_replace("[VOLTN_DESCRIPTION_".$i."]",$data['data']['recs'][$i]['props']['description'],$template);
