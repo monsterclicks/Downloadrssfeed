@@ -1,6 +1,6 @@
 <?php
-//$cont = file_get_contents("https://api.blootle.com/topix_articles_get?count=5&bt_email=[-EMAILADDR-]&filter=%7B%22resource_type%22%3A%5B%22Offbeat%22%5D%7D");
-$cont = file_get_contents("/tmp/tmp.txt");
+$cont = file_get_contents("https://api.blootle.com/topix_articles_get?count=5&bt_email=[-EMAILADDR-]&filter=%7B%22resource_type%22%3A%5B%22Offbeat%22%5D%7D");
+//$cont = file_get_contents("/tmp/tmp.txt");
 $newdata = str_replace("\\","",$cont);
 $data = json_decode($newdata, true);
 //file_put_contents("/tmp/tmp.txt",$cont);
