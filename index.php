@@ -1,5 +1,10 @@
 <?php
-$cont = file_get_contents("https://api.blootle.com/topix_articles_get?count=5&bt_email=[-EMAILADDR-]&filter=%7B%22resource_type%22%3A%5B%22Offbeat%22%5D%7D");
+
+$template = file_get_contents(__DIR__ .'/test_template.html');
+$endpoint = strstr($template,"<title>");
+$endpoint = strstr($endpoint,"</title>",true);
+$endpoint = str_replace("<title>","",$endpoint);
+$cont = file_get_contents("https://api.blootle.com/topix_articles_get?count=5&bt_email=[-EMAILADDR-]&filter=%7B%22resource_type%22%3A%5B%22{$endpoint}%22%5D%7D");
 //$cont = file_get_contents("/tmp/tmp.txt");
 $newdata = str_replace("\\","",$cont);
 $data = json_decode($newdata, true);
@@ -8,7 +13,7 @@ $data = json_decode($newdata, true);
 
 //echo __DIR__."</br>";
 
-$template = file_get_contents(__DIR__ .'/test_template.html');
+
 $totalc = count($data['data']['recs']);
 if ($totalc == 0){
   die('Did not get any response from API');
